@@ -279,7 +279,7 @@ jobs:
           mv -v {linux,macos,windows}/gh_* dist/
       - name: Attest release artifacts
         if: inputs.environment == 'production'
-        uses: actions/attest-build-provenance@173725a1209d09b31f9d30a3890cf2757ebbff0d # v1.1.2
+        uses: actions/attest-build-provenance@1c608d11d69870c2092266b3f9a6f3abbf17002c # v1.4.3
         with:
           subject-path: "dist/gh_*"
       - name: Install packaging dependencies
